@@ -49,7 +49,7 @@ body {
     margin: 0 auto;
     padding: 0 40px 0 40px;
 }
-h1 {
+.get-a-quote__title {
     font-size: 30px;
     line-height: 16px;
     color: #f0d8d9;
@@ -58,7 +58,7 @@ h1 {
     padding-top: 70px;
     letter-spacing: -0.25px;
 }
-p {
+.get-a-quote__description {
     width: 940px;
     height: 57px;
     font-size: 18px;
@@ -106,7 +106,7 @@ textarea::-webkit-input-placeholder {
     padding-left: 15px;
     padding-top: 7px;
 }
-button {
+.submit {
     font-family: "Lato";
     border: 1px solid #f0d8d9;
     background-color: #f0d8d9;
@@ -119,14 +119,14 @@ button {
     margin-left: 21px;
     max-width: 300px;
 }
-h3 {
+.contact-info__title {
     font-size: 18px;
     line-height: 18px;
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 900;
 }
-.text {
+.contact-text {
     width: 300px;
     font-size: 12px;
     line-height: 22px;
@@ -135,9 +135,6 @@ h3 {
     font-weight: 400;
     padding-top: 10px;
     padding-bottom: 51px;
-}
-.ico-info {
-
 }
 span {
     font-size: 11px; 
@@ -148,7 +145,7 @@ span {
     line-height: 18px;
     letter-spacing: 0.35px;
 }
-a {
+.ico-info a {
     text-decoration: none;
     color: efd7d9;
 }
@@ -165,7 +162,7 @@ footer {
     padding-left: 2px;
     float: left;
 }
-.social {
+.footer__social {
     float: right;
     margin-top: 22px;
     display: flex;

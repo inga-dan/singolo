@@ -49,7 +49,7 @@ body {
     margin: 0 auto;
     padding: 0 40px 0 40px;
 }
-h1 {
+.portfolio__title {
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -58,7 +58,7 @@ h1 {
     padding-top: 70px;
     letter-spacing: 0.15px;
 }
-p {
+.portfolio__description {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -68,10 +68,10 @@ p {
     padding-bottom: 10px;
     letter-spacing: -0.24px;
 }
-.buttons {
+.portfolio__buttons {
     padding-bottom: 12px;
 }
-button {
+.button1, .button2, .button3, .button4 {
     color: #767e9e;
     font-size: 12px;
     font-family: "Lato";
@@ -87,7 +87,7 @@ button {
 button:hover {
     background-color: blue;
 }
-.active {
+button:active {
     color: #dedede;
     border: 1px solid #dedede ;
 }
@@ -110,6 +110,25 @@ button:hover {
     height: 728px;
     border-bottom: 6px solid #ffffff;;
 }
+.about-us__title {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    padding-top: 70px;
+    letter-spacing: 0.15px; 
+}
+.about-us__description {
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    padding-top: 27px;
+    padding-bottom: 10px;
+    letter-spacing: -0.24px;
+}
 .three-column-layout {
     display: flex;
     flex-direction: row;
@@ -123,7 +142,7 @@ button:hover {
     padding-right: 18px;
 }
 .column2 {
-padding-right: 20px;
+    padding-right: 20px;
 }
 h2 {
     font-size: 18px;

@@ -1,104 +1,101 @@
 
 @font-face {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: 100;
     font-style: normal; 
-    src: url('assets/Lato/Lato-Thin.ttf');
+    src: url(assets/Lato/Lato-Thin.ttf );
 }
 @font-face {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: 300;
     font-style: normal;
-    src: url('assets/Lato/Lato-Light.ttf'); 
+    src: url(assets/Lato/Lato-Light.ttf); 
 }
 @font-face {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: 400;
     font-style: normal;
-    src: url('assets/Lato/Lato-Regular.ttf'); 
+    src: url(assets/Lato/Lato-Regular.ttf); 
 }
 @font-face {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: 700;
     font-style: normal; 
-    src: url('assets/Lato/Lato-Bold.ttf');
+    src: url(assets/Lato/Lato-Bold.ttf);
 }
 @font-face {
-    font-family: 'Lato';
+    font-family: "Lato";
     font-weight: 900;
     font-style: normal; 
-    src: url('assets/Lato/Lato-Black.ttf');
+    src: url(assets/Lato/Lato-Black.ttf);
 }
 
-
-/*----------Common styles-------------------------*/
 
 *{
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Lato';
+    font-family: "Lato";
     text-align: center;
 }
-.container {
-    text-align:left;
-    width: 100%;
-    max-width: 1020px;
-    height: 1200px;
-    margin: 0 auto;
-}
-.wrapper {
-  padding: 0px 40px 0px 40px;
-}
 .header {
+    max-width: 1020px;
     height: 89px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
 }
-.red-star {
-    color: #f06c64;
-    
+.wrapper {
+  padding: 0px 40px 0px 40px;
+  text-align:left;
+  margin: 0 auto;
 }
-.logo {
-    padding-top: 40px;
-    text-transform: uppercase;
+.red-star {
+    color: #f06c64; 
+}
+.header__logo {
+    padding-top: 42px;
+    float: left;
 }
 h1 {
-    font-size: 26px;
+    font-family: "Lato";
+    font-size: 19pt;
     color: #ffffff;
     line-height: 6px;
-    font-weight: 600px;
-    letter-spacing: -0.5px;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
 }
-.navigation {
-    list-style-type: none;
-    line-height: 6px;
-    letter-spacing: -0.5px;
-}
-ul {
+nav {
     float: right;
+    padding-top: 38px;
 }
-.navigation li {
+.header__navigation {
+    float: left;
+    list-style-type: none;
+}
+
+.header__navigation li {
     display: inline-block;
-    margin: 0px 14px;
-    font-size: 12px;
+    font-size: 11px;
+    line-height: 6px;
+    font-weight: 400;
+    padding-left: 29px;
 }
-li:after {
-    color: orange;
+.header__navigation li:after {
+    color: #494e62;
     position: absolute;
     content: "."; 
     margin: 0px 14px;
     font-size: 12px;
     top: 43px;
 }
-.nav__link { 
+.header__navigation a { 
     text-decoration: none;
     color: #ffffff;
 }
-.nav__link:hover {
-    color: #dbdc7f;
-
+.header__navigation a:hover {
+    cursor: pointer;
+    color: violet;
 }
 .slider {
     height: 590px;
@@ -109,13 +106,13 @@ li:after {
     display: flex;
 }
 .vertical {
-    left: 0px;
-    top: 0px; 
+    left: -3px;
+    top: -5px; 
     position: absolute;
 }
 .horizontal {
-    left: 0px;
-    top: 0px; 
+    left: -8px;
+    top: -5px; 
     position: absolute;
 }
 .slider__buttons {
@@ -138,13 +135,13 @@ li:after {
 .our-services {
     padding-top: 60px;
 }
-.our-services .title {
+.our-services__title {
     font-size: 30px;
     color: #666d89;
 }
-.our-services .description {
-    padding-top: 10px;
-    padding-bottom: 30px;;
+.our-services__description {
+    padding-top: 20px;
+    padding-bottom: 40px;;
     font-size: 17px;
     line-height: 30px;
     color: #767e9e;
@@ -170,15 +167,14 @@ li:after {
     margin-right: 19px;
 }
 .service__icon img {
-    padding-top: 5px;
-    padding-right: 18px;
+    padding-top: 3px;
+    padding-right: 20px;
 }
 .service-content {
     overflow: hidden;
     justify-content: space-between;
 }
-
-h3 {
+.service__title {
     font-size: 18px;
     margin-bottom: 8px;
     font-weight: bold;
@@ -186,8 +182,7 @@ h3 {
     font-family: "Lato";
     text-align: left;
 }
-
-p {
+.service__text {
     color: #767e9e;
     font-size: 11px;
     font-family: "Lato";
