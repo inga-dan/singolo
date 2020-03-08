@@ -373,6 +373,9 @@ textarea::-webkit-input-placeholder {
     width: 100px;
     height: 38px;
 }
+.submit:hover {
+    transform: scale(1.3);
+}
 .contact-info {
     margin-left: 21px;
     max-width: 300px;
