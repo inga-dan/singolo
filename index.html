@@ -9,32 +9,49 @@
 </head>
     <body>
         <header class="header">
-            <div class="wrapper">
+            <div class="wrapper header__wrapper">
                 <div class="header__logo">
                     <h1>singolo<span class="red-star">*</span></h1>
                 </div>
-                <nav>
-                    <ul class="header__navigation">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                <div id="header-menu">
+                    <ul>
+                        <li><a class="active" href="#slider">HOME</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#about-us">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </header>
-        <section class="slider">
-            <div class="wrapper">
+        <section class="slider slider_blue" id="slider">
+            <div class="wrapper slider_wrapper">
                 <div class="slider__content">
-                    <img class="prev-button" src="./assets/left.svg" alt="prev"></img>
-                    <img class="vertical" src="./assets/iPhone Vertical.png" alt="Phone vertical"></img>
-                    <img class="horizontal" src="./assets/iPhone Horizontal.png" alt="Phone horizontal"></img>
-                    <img class="next-button" src="./assets/right.svg" alt="next"></img>
+                    <div class="slide slide1">
+                        <div class="phones phones-container">
+                            <div class="phone shadow" id="vertical">
+                                <img src="assets/slider/shadow-vertical.png" alt="shadow-vertical">
+                                <img id="ph-vert" src="assets/slider/phone-vertical.png" alt="phone-vertical">
+                                <img id="scr-vert" src="assets/slider/screen-vertical.png" alt="screen-vertical">
+                            </div>
+                            <div class="phone" id="horizontal">
+                                <img src="assets/slider/shadow-horizontal.png" alt="shadow-horizontal">
+                                <img id="ph-hor" src="assets/slider/phone-horizontal.png" alt="phone-horizontal">
+                                <img id="scr-hor" src="assets/slider/screen-horizontal.png" alt="screen-horizontal">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide slide2">
+                        <img class="phone blue_phone" src="assets/slider/phone-group.png">
+                    </div>
+                </div>
+                <div class="slider__buttons">
+                    <img class="prev-button" id="pr-btn" src="./assets/left.svg" alt="prev"></img>
+                    <img class="next-button" id="nx-btn" src="./assets/right.svg" alt="next"></img>
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="wrapper">
                 <div class="our-services">
                     <h2>Our Services</h2>
@@ -98,35 +115,35 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="wrapper">
                 <h1>Portfolio</h1>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <div class="portfolio__buttons">
-                    <button class="portfolio-button">All</button>
+                <div class="portfolio__buttons" id = "menu-portfolio">
+                    <button class="portfolio-button active">All</button>
                     <button class="portfolio-button">Web Design</button>
                     <button class="portfolio-button">Graphic Design</button>
                     <button class="portfolio-button">Artwork</button>
                 </div>
                 <div class="gallery">
-                    <ul>
-                        <li><img src="assets/img1.png"></li>
-                        <li><img src="assets/img2.png"></li>
-                        <li><img src="assets/img3.png"></li>
-                        <li><img src="assets/img4.png"></li>
-                        <li><img src="assets/img5.png"></li>
-                        <li><img src="assets/img6.png"></li>
-                        <li><img src="assets/img7.png"></li>
-                        <li><img src="assets/img8.png"></li>
-                        <li><img src="assets/img9.png"></li>
-                        <li><img src="assets/img10.png"></li>
-                        <li><img src="assets/img11.png"></li>
-                        <li><img src="assets/img12.png"></li>
+                    <ul id="gallery">
+                        <li><img class="gallery-img" src="assets/img1.png"></li>
+                        <li><img class="gallery-img" src="assets/img2.png"></li>
+                        <li><img class="gallery-img" src="assets/img3.png"></li>
+                        <li><img class="gallery-img" src="assets/img4.png"></li>
+                        <li><img class="gallery-img" src="assets/img5.png"></li>
+                        <li><img class="gallery-img" src="assets/img6.png"></li>
+                        <li><img class="gallery-img" src="assets/img7.png"></li>
+                        <li><img class="gallery-img" src="assets/img8.png"></li>
+                        <li><img class="gallery-img" src="assets/img9.png"></li>
+                        <li><img class="gallery-img" src="assets/img10.png"></li>
+                        <li><img class="gallery-img" src="assets/img11.png"></li>
+                        <li><img class="gallery-img"src="assets/img12.png"></li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
             <div class="wrapper">
                 <h1>About Us</h1>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
@@ -169,17 +186,17 @@
                 </div>
             </div>
         </section>
-        <section class="get-a-quote">
+        <section class="get-a-quote" id="contact">
             <div class="wrapper">
                 <h1>Get a Quote</h1>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
                     porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="two-column-layout">
                     <form action="URL" method="POST">
-                        <input type="text" name="name" placeholder="Name" required>
-                        <input type="email" name="email" placeholder="Email" required>
-                        <input type="text" name="subject" placeholder="Subject">
-                        <textarea name="Describe" placeholder="Describe your project in detail..." cols="40" rows="10"></textarea>
+                        <input class="input-form" type="text" name="name" placeholder="Name" required>
+                        <input class="input-form" type="email" name="email" placeholder="Email" required>
+                        <input class="input-form" type="text" name="subject" placeholder="Subject">
+                        <textarea class="input-form" name="Describe" placeholder="Describe your project in detail..." cols="40" rows="10"></textarea>
                         <button class="submit" type="submit">Submit</button>
                     </form>
                     <div class="contact-info">
@@ -207,5 +224,6 @@
                 </div>
             </div>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
