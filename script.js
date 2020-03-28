@@ -7,7 +7,7 @@ function onscroll(event) {
     const links = document.querySelectorAll('#header-menu a');
 
     sect.forEach((el) => {
-        if(el.offsetTop-95 <= curPos && (el.offsetTop + el.offsetHeight-95) > curPos) {
+        if(el.offsetTop-100 <= curPos && (el.offsetTop + el.offsetHeight-100) > curPos) {
             links.forEach((a) => {
                 a.classList.remove('active');
                 if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
@@ -25,33 +25,31 @@ document.querySelector('#toggle-menu').addEventListener('click', function(){
     document.querySelector('#toggle-menu').classList.toggle('rotate');
 })
 
+
+
 // portfolio bordered img
-gallery.addEventListener('click', event => {
-    let target = event.target;
-    if (target.tagName == 'IMG') {
-        gallery.querySelectorAll('img').forEach(item => {
-            item.style.boxShadow = "none";
-        });
-        event.target.style.boxShadow = "0px 0px 0px 5px #F06C64";
+pictures = document.getElementById('gallery');
+
+pictures.addEventListener('click', event=>{
+    if (event.target.tagName==='img'.toUpperCase()){
+        pictures.querySelectorAll('img').forEach(item =>{item.classList.remove('bordered');});
+        event.target.classList.add('bordered');
     }
-
-})
-
-//portfolio random
-const images = document.querySelectorAll('.gallery-img');
-let randomSrc = [];
-
-images.forEach(element => {
-    randomSrc.push(element.src);
 });
 
-const randomImages = () => {
-    randomSrc.sort(() => Math.random() - 0.5);
-    images.forEach((element, index) => {
-        element.src = randomSrc[index];
-    });
-    console.log(randomSrc);
+
+//sort portfolio img
+const imageSort = document.querySelector("#gallery")
+
+const buttonSort = document.querySelectorAll('.portfolio-button')
+buttonSort.forEach(i => i.addEventListener('click', e => shuffle(imageSort)))
+function shuffle(ul) {
+  for (let i = ul.children.length; i >= 0; i--) {
+    ul.appendChild(ul.children[Math.random() * i | 0]);
+  }
 }
+
+
 
 //menu portfolio active
 document.getElementById('menu-portfolio').addEventListener('click', (event) => {
