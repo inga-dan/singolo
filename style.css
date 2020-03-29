@@ -161,11 +161,11 @@ p {
         line-height: 0;
         letter-spacing: 0;
     }
-    #header-menu{
+    #header-menu {
         display: none;
         position: absolute;
         margin:0;
-        background-color:#002e5b;
+        background-color:#2D303A;
         padding:0;
         height:1500px;
         width: 278px;
