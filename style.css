@@ -144,6 +144,9 @@ p {
     input#toggle-1:checked ~ #header-menu{
         display:block;
     } 
+    input#toggle-1:checked ~ .header__logo {
+        padding-right: 157px;
+    }
     .header {
         height: 70px;
     }
@@ -164,7 +167,7 @@ p {
         margin:0;
         background-color:#002e5b;
         padding:0;
-        height:812px;
+        height:1500px;
         width: 278px;
         left: 0;
         opacity: 1;
@@ -578,7 +581,7 @@ img.gallery-img {
     }
     .gallery li { 
         flex: 1 0 32%;
-        margin: 6.5px 6.5px;
+        margin: 7px 6.5px;
     }
     .gallery li:nth-child(n+9) {
         display : none;
@@ -677,6 +680,14 @@ img.gallery-img {
     }
     .column {
         padding-bottom: 34px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .column h2 {
+        padding-top: 15px;
+    }
+    .photo {
+        width: 105%;
     }
     .about-us h1 {
         padding-top: 42px;
@@ -916,7 +927,7 @@ footer {
 
 .message {
     overflow-wrap: break-word;
-    width: 100%;
+    width: 70%;
     max-height: 450px;
     position: absolute;
     top: 200px;;
@@ -926,6 +937,8 @@ footer {
     border: solid 2px #f48c8f;
     border-radius: 20px;
     overflow: auto;
+    right: 15%;
+    left: 15%;
 }
 .message-title {
     color: #dedede;
